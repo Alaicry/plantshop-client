@@ -3,6 +3,8 @@ import Container from "./Container";
 import Logo from "../assets/images/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 import { headerLinkRoutes } from "../utils/constants/routes";
+import { BsSearch } from "react-icons/bs";
+import { MdOutlineShoppingCart } from "react-icons/md";
 
 const Header: React.FC = () => {
 	return (
@@ -27,6 +29,11 @@ const Header: React.FC = () => {
 						))}
 					</ul>
 				</nav>
+				<div className="content">
+					<BsSearch className="content__icon content__icon--search" />
+					<MdOutlineShoppingCart className="content__icon content__icon--cart" />
+					<button className="content__button button">Login</button>
+				</div>
 			</Container>
 		</header>
 	);

@@ -18,7 +18,7 @@
 .menu {
 	display: flex;
 	align-items: center;
-  justify-content: space-between;
+	justify-content: space-between;
 	gap: 50px;
 	&__item {
 		font-size: 16px;
@@ -26,9 +26,25 @@
 	}
 	&__link {
 		&--active {
-      font-weight: 700;
+			font-weight: 700;
 			padding-bottom: 22px;
 			border-bottom: 3px solid #46a358;
+		}
+	}
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__icon {
+		&--search {
+			width: 20px;
+			height: 20px;
+		}
+		&--cart {
+			width: 24px;
+			height: 24px;
 		}
 	}
 }
